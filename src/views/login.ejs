@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hello</title>
+    <link rel="stylesheet" href="/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <div id="form-area">
+      <form method="POST" action="/login">
+        <div class="input-div">
+          <label for="email">Email</label>
+          <input type="email" name="email" id="" placeholder="enter email" />
+        </div>
+        <div class="input-div">
+          <label for="password">Password</label>
+          <input
+            type="password"
+            name="password"
+            id=""
+            placeholder="enter password"
+          />
+        </div>
+
+        <button type="submit">submit</button>
+      </form>
+
+      <div class="loginStrategy">
+        <div>
+          <h5>Log in using</h5>
+        </div>
+        <div>
+         <a href="/auth/google"> <i class="fa fa-google" aria-hidden="true"></i> </a>
+         <a href="/auth/facebook"> <i class="fa fa-facebook-square" aria-hidden="true"></i> </a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
